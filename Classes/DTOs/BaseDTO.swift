@@ -13,14 +13,9 @@ class BaseDTO:Mappable {
     var result:String!
     var httpCode:Int!
     
-    
     class func newInstance() -> Mappable {
         return BaseDTO()
     }
-    
-//    required init?(_ map:Map) {
-//        mapping(map)
-//    }
     
     func mapping(map: Map) {
         
