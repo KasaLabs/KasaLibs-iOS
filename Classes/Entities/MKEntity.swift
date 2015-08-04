@@ -10,6 +10,9 @@ import ObjectMapper
 import RealmSwift
 
 
+var Realm:Realm { return RealmSwift.Realm() }
+
+
 class MKEntity:Object, Mappable {
    
     dynamic var id:String = ""    
