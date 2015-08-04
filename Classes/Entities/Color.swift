@@ -30,7 +30,7 @@ class Color: MKEntity {
     
     
     func uicolor() -> UIColor {
-        return UIColor(R:red, G:green, B:blue)
+        return UIColor(red:CGFloat(red)/255.0, green:CGFloat(green)/255.0, blue:CGFloat(blue)/255.0, alpha:1.0)
     }
 
 
